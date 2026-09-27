@@ -32,3 +32,10 @@ dist-ssr
 *.sw?
 .env
 .vercel/
+
+.netlify/
+
+# Local backup files
+vite.config.backup.ts
+vite.config.netlify-backup.ts
+src/lib/mongo.functions.backup.ts
