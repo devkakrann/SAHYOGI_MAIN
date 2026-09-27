@@ -31,7 +31,7 @@ export const getUserById = createServerFn({ method: "GET" })
 
     const created = await createUser(user);
 
-    return { ok: true };
+    return { ok: true, userId: created.id };
   });
 
   export const testServerFunction = createServerFn({ method: "GET" })
